@@ -1,3 +1,9 @@
-def alphabetize(arr)
-  # code here
+ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
+def alphabetize(array)
+ array.sort_by do |phrase|
+   phrase.split("").map do |letter|
+     ALPHABET.index(letter)
+   end
+ end
 end
