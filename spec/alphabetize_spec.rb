@@ -26,4 +26,12 @@ describe "#alphabetize" do
     expect(alphabetize(greetings)).to eq(sorted_greetings)
   end
 
+  it 'alphabetizes based on the first letter only' do
+    expressions = ["m", "b", "p", "ĉ"]
+    sorted_expressions = ["b", "ĉ", "m", "p"]
+    expect(alphabetize(expressions)).to eq(sorted_expressions)
+  end
+
+  
+
 end
