@@ -1,5 +1,4 @@
 describe "#alphabetize" do
-
   # ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
   it 'alphabetizes based on the first letter' do
