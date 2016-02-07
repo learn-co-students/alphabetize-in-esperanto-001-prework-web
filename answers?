@@ -1,0 +1,25 @@
+
+
+def alphabetize(array)
+    esperanto = "abcĉdefgĝhĥijĵklmnopqrsŝtuŭvxywz".split("")
+    newarray = []
+    array.sort!
+    esperanto.each do |char| # abcde....
+      array.each do |string| #["bonan matenon", "ĉu vi parolas esperanton", "mi amas vin", "pacon"]
+        if char == string[0]
+            newarray << string
+              # binding.pry
+        end
+      end
+    end
+  newarray
+end
+
+ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+def alphabetize(arr)
+  new_arr = arr.sort_by do |word|
+    word.split('').map do |letter|
+      ALPHABET.index(letter)
+    end
+  end
+end
