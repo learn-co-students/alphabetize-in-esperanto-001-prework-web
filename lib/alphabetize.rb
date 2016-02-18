@@ -35,5 +35,3 @@ def alphabetize(arr)
   esp_arr_final
   #binding.pry# code here
 end
-
-esp_array = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
