@@ -1,3 +1,8 @@
+ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
-  # code here
+  new_arr = arr.sort_by do |word|
+    word.split('').map do |w|
+      ALPHABET.index(w)
+    end
+  end
 end
