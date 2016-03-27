@@ -2,7 +2,7 @@ require 'pry'
 
 def alphabetize(arr)
 alphabet = 'abcĉdefgĝhĥijĵklmnoprsŝtuŭvz'
-ralphabet= 'abCcdefGgHhiJjklmnoprsStuUvz'
+ralphabet= 'ABabcdefghijklmnopqrstuvwxyz'
 
 arr.sort_by{|string| string.tr(alphabet,ralphabet)}
  end
