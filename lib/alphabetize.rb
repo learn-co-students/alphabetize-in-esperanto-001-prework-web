@@ -9,7 +9,7 @@ arr.sort_by{|string| string.tr(alphabet,ralphabet)}
 
 
 
-def alphabetize_everything(arr) #Alphabetized every letter in every word to the ESPERANTO ALPHABET
+def alphabetize_everything(arr) #manually Alphabetized every letter in every word to the ESPERANTO ALPHABET 
 alphabet = 'abcĉdefgĝhĥijĵklmnoprsŝtuŭvz'
 alphabetHash={}
 alphabet.split('').each_with_index do |char, i|
