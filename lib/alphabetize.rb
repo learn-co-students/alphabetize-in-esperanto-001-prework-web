@@ -7,21 +7,18 @@ arr.sort_by{|string| string.tr(alphabet,ralphabet)}
 end
 
 def alphabetize_long(arr)
-
-
 alphabet = 'abcĉdefgĝhĥijĵklmnoprsŝtuŭvz'
 alphabetHash={}
 alphabet.split('').each_with_index do |char, i|
    alphabetHash[char]=i
 end
 
-  arr.sort_by do |word|
+arr.sort_by do |word|
      word.split("").collect do |letter|
         alphabetHash[letter]
      end
     end
-
- end
+end
 
 
 
