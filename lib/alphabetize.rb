@@ -1,10 +1,5 @@
-require 'pry'
-
 def alphabetize(arr)
-  alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split(//)
   arr.sort_by! do |phrase|
-    phrase.chars.map do |char|
-      alphabet.index char
-    end
+    phrase.chars.map { |char| "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars.index(char) }
   end
 end
